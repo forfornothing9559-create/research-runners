@@ -1,0 +1,73 @@
+{
+  "_comment": "v3, written 2026-09-21. v1 and v2 never collected data. Everything EXCEPT the 'api' block is locked from the moment the first `run` writes an event. The 'api' block only controls throughput and may be tuned at any time. One pre-launch exception: if GeckoTerminal's network id for Robinhood Chain is not 'robinhood', correct it before the first run. That is a naming fix, not a design change.",
+
+  "run_id": "2026-09-21-insentos-v3-robinhood",
+
+  "api": {
+    "_note": "OPERATIONAL. Tune freely. Affects speed, never what is measured. Spacing is 20s from Claude Code's live measurement (7s: 60% blocked, 15s: 30%, 20s: 10%).",
+    "gt_min_spacing_sec": 20.0,
+    "gt_max_calls_per_run": 30,
+    "gt_multi_batch": 30,
+    "stop_after_consecutive_429": 4,
+    "backoff_sec": [30, 60],
+    "run_wallclock_budget_sec": 600
+  },
+
+  "networks": ["robinhood"],
+  "collect_pages": 2,
+
+  "universe": {
+    "_note": "Tradeable-universe gate, applied BEFORE the filter, identically to both arms. Pools failing it are 'untradeable' and excluded from scoring.",
+    "min_liquidity_usd": 2000,
+    "min_volume_h1_usd": 100,
+    "max_liq_to_fdv": 2.0,
+    "min_sellers_h1": 3
+  },
+
+  "evaluate_at_age_min": 60,
+  "evaluate_window_min": 40,
+
+  "filter": {
+    "_source": "@insentos video 'BEST FILTERS TO TRADE ON ROBINHOOD' (Robinhood Chain). Market-size half of the filter panel only. The safety half is not reproducible from free data on this chain; see preregistration.",
+    "min_market_cap_usd": 25000,
+    "min_volume_h1_usd": 1000,
+    "min_liquidity_usd": 10000
+  },
+
+  "checkpoints": [[1, 0.5], [6, 1.5], [24, 4], [168, 24]],
+  "ohlcv_limit": 700,
+  "ohlcv_tolerance_hours": 72,
+  "dead_liquidity_usd": 500,
+
+  "costs": {
+    "slippage_in": 0.02,
+    "slippage_out": 0.04,
+    "fee_round_trip": 0.02
+  },
+
+  "exit_policies": {
+    "hold_24h": {"type": "hold", "hours": 24},
+    "hold_7d": {"type": "hold", "hours": 168},
+    "single_2x": {"type": "single_target", "multiple": 2.0},
+    "single_5x": {"type": "single_target", "multiple": 5.0},
+    "ladder_video": {"type": "ladder", "multiples": [50, 60, 100, 125, 180]},
+    "ladder_shallow": {"type": "ladder", "multiples": [1.5, 2, 3, 5, 10]},
+    "ladder_mid": {"type": "ladder", "multiples": [2, 3, 5, 10, 25]},
+    "trail_50": {"type": "trailing_stop", "drawdown": 0.50}
+  },
+
+  "primary": {
+    "q1_horizon_hours": 24,
+    "q2_policy": "ladder_mid",
+    "q2_baseline": "hold_7d"
+  },
+
+  "regime_split_utc": "2026-09-30T00:00:00Z",
+
+  "min_per_arm": 100,
+  "min_paths_for_ladder": 150,
+  "max_missing_rate_gap": 0.05,
+  "permutations": 10000,
+  "bootstraps": 10000,
+  "alpha": 0.01
+}

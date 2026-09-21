@@ -1,0 +1,50 @@
+name: ethfilter
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ethfilter
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      # Standard library only. Nothing to install.
+      # The script stops making calls at 10 minutes on its own, so it always
+      # finishes and commits before the 14-minute job limit.
+      - name: Run one collection cycle
+        working-directory: ethfilter
+        run: python ethfilter.py run
+
+      - name: Commit new data
+        run: |
+          git config user.name "ethfilter-bot"
+          git config user.email "actions@github.com"
+          git add ethfilter/data
+          if git diff --staged --quiet; then
+            echo "nothing new"
+          else
+            git commit -m "data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            # Fail loudly if the data never reaches GitHub: a silent push
+            # failure is a silent gap in a prospective sample.
+            for i in 1 2 3; do
+              git pull --rebase --autostash && git push && exit 0
+              sleep 5
+            done
+            echo "push failed three times" >&2
+            exit 1
+          fi
