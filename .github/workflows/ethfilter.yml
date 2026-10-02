@@ -30,7 +30,7 @@ jobs:
         working-directory: ethfilter
         run: python ethfilter.py run
 
-      - name: Commit new data
+      - name: Commit new data and refreshed reports
         run: |
           git config user.name "ethfilter-bot"
           git config user.email "actions@github.com"
@@ -38,6 +38,12 @@ jobs:
           if git diff --staged --quiet; then
             echo "nothing new"
           else
+            # Reports are regenerated only when the data actually changed. Doing it
+            # unconditionally would commit a new timestamp every 15 minutes forever.
+            # reports/ is staged here because it was previously left out of `git add`,
+            # which is why reports/status.md sat at 2026-09-24 while collection ran.
+            python ethfilter/base_rates.py --write
+            git add reports
             git commit -m "data $(date -u +'%Y-%m-%d %H:%M UTC')"
             # Fail loudly if the data never reaches GitHub: a silent push
             # failure is a silent gap in a prospective sample.
