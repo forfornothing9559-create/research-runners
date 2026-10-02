@@ -1,88 +1,76 @@
 # ethfilter base rates: how often a new Robinhood token became sellable at a multiple
 
-Generated 2026-10-02 05:53 UTC by `ethfilter/base_rates.py`. Pre-registered as a descriptive output of
-Q2 (`preregistration.md`), and declared unaffected by the cost finding
-(`cost_finding.md`), because it reads no cost model and reports no return.
+Generated 2026-10-02 09:37 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
+Pre-registered as a descriptive Q2 output. **Descriptive only: no verdict is issued here.**
+Q1's verdict is a permutation test on 24h net return and is not this table.
 
-**Run id** `2026-09-21-insentos-v3-robinhood`  |  **chain** robinhood (4663)  |  **death threshold** $500 liquidity
+## Denominator, and why it is not simply 'tokens with a price path'
 
-## Sample
+Scored tokens are **mature** (`eval_ts + 168h` elapsed) and tradeable. Within those, a
+candle file that is present but **empty** counts as *never reached the rung*, not as a
+missing value: GeckoTerminal is queried once after the window closes, so no candles means
+the pool recorded no trades in 168 hours. Only `no_file` is genuinely unknown.
 
-| | |
-|---|---|
-| Pools evaluated | 31771 |
-| Failed the tradeable-universe gate (excluded, pre-registered) | 26632 |
-| Tradeable | **5139** | 
-| &nbsp;&nbsp;of which **pass** arm (the filter's own picks) | **600** |
-| &nbsp;&nbsp;of which **reject** arm | 4539 |
-| Tradeable but no usable entry price | 0 |
-| Tradeable tokens with a usable 15-min price path | **1021** |
-| Tradeable, candle file present but empty | 733 |
-| Tradeable, no candle file yet | 3385 |
+| Arm | Mature | Traded (usable path) | Never traded (empty) | Unknown (no file) | Denominator |
+|---|---|---|---|---|---|
+| pass | 198 | 135 (68.2%) | 41 (20.7%) | 22 (11.1%) | **176** |
+| reject | 1645 | 886 (53.9%) | 692 (42.1%) | 67 (4.1%) | **1578** |
 
-The table below is over the **1021** tokens with a usable price path, not over all 5139
-tradeable tokens. 4118 of 5139 (80.1%) are missing a usable path, which is a coverage
-limit on this table and is reported here rather than silently absorbed into the
-denominator. A 168-hour price path cannot exist yet for a token evaluated in the last
-week, so this number is expected to be large early and to fall as the window fills.
+**This is the survivorship check, and it does not come out neutral.** The empty-candle
+tokens are overwhelmingly reject-arm (41 pass vs 692 reject). An earlier version of this
+script excluded them, which inflated the reject arm far more than the pass arm: it
+overstated both arms' levels while *understating* the separation between them. Counting
+them is what the numbers below do.
+
+Not scored: 3296 tradeable tokens whose 168-hour window is still open (402 pass, 2894 reject).
 
 ## The table
 
-`sellable` is the pre-registered fill rule: a 15-minute candle whose high reaches the rung,
-that candle traded, and the most recent liquidity reading at or before it was above the
-death threshold. `price alone` ignores whether anything could be sold and is shown only to
-size the difference.
+`printed` = a 15-minute candle high reached the rung while liquidity was above the $500
+death threshold. This is the share that ever *printed* the multiple, which is the same
+quantity as marking a position at last price.
 
-**Read this before the numbers.** On this sample the fill rule's sellability conditions
-almost never bind: of 33145 in-window candles, 0 had no volume and 1 sat below the death
-threshold. So `sellable` and `price alone` come out nearly identical, and the table is in
-practice a **price-reached** table, not an executable one. Two structural reasons, both
-inherent to the data rather than to this script:
+`net $100` / `net $1k` = the rung still clears after paying constant-product exit impact
+for that stake against the pool's own liquidity at that moment, plus the locked 2% fees
+and 2% entry slippage. The locked flat 4% exit slippage is replaced, because
+`cost_finding.md` shows it understates every realistic held exit.
 
-1. GeckoTerminal's OHLCV feed only returns candles that traded, so "that candle traded"
-   is true by construction and filters nothing.
-2. Liquidity is only read at 4 checkpoints (1h, 6h, 24h, 168h), so a pool that dies between
-   them can still have a rung counted. `preregistration.md` states this limitation itself:
-   "a pool that dies between checkpoints can have a rung counted in the gap before its
-   death is observed."
+| Rung | pass printed | pass net $100 | pass net $1k | reject printed | reject net $100 | reject net $1k |
+|---|---|---|---|---|---|---|
+| 1.5x | 67 (38.1%) | 62 (35.2%) | 55 (31.2%) | 74 (4.7%) | 65 (4.1%) | 33 (2.1%) |
+| 2x | 46 (26.1%) | 42 (23.9%) | 38 (21.6%) | 54 (3.4%) | 42 (2.7%) | 14 (0.9%) |
+| 3x | 30 (17.0%) | 29 (16.5%) | 28 (15.9%) | 21 (1.3%) | 21 (1.3%) | 7 (0.4%) |
+| 5x | 16 (9.1%) | 14 (8.0%) | 12 (6.8%) | 11 (0.7%) | 7 (0.4%) | 3 (0.2%) |
+| 10x | 5 (2.8%) | 4 (2.3%) | 3 (1.7%) | 5 (0.3%) | 3 (0.2%) | 2 (0.1%) |
+| 25x | 1 (0.6%) | 0 (0.0%) | 0 (0.0%) | 2 (0.1%) | 2 (0.1%) | 1 (0.1%) |
+| 50x | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 2 (0.1%) | 2 (0.1%) | 0 (0.0%) |
+| 100x | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) |
 
-**Treat every share below as an upper bound.** It is the share that ever *printed* the
-multiple, which is the same quantity as marking a position at last price. Answering what
-could actually be exited needs quote-side depth at the moment of the hit, which this
-dataset does not carry per candle. The 2026-09-24 launch-tape measurement is the warning:
-20x+ tickets there carried a 73% average round-trip cost and 69-71% of them had under $500
-of exit liquidity.
+**n behind each cell is small above 5x.** At 10x and beyond both arms are in single digits
+and nothing there separates them; at 25x and 50x the counts are 0-2 and the apparent
+inversion is noise, not a finding. Read 1.5x through 5x; treat the rest as not yet measured.
 
-| Rung | Ever sellable | Share | Price alone | Share | Gap |
-|---|---|---|---|---|---|
-| 1.5x | 141 | 13.8% | 141 | 13.8% | +0.0 pts |
-| 2x | 100 | 9.8% | 100 | 9.8% | +0.0 pts |
-| 3x | 51 | 5.0% | 51 | 5.0% | +0.0 pts |
-| 5x | 27 | 2.6% | 27 | 2.6% | +0.0 pts |
-| 10x | 10 | 1.0% | 10 | 1.0% | +0.0 pts |
-| 25x | 3 | 0.3% | 3 | 0.3% | +0.0 pts |
-| 50x | 2 | 0.2% | 2 | 0.2% | +0.0 pts |
-| 100x | 0 | 0.0% | 0 | 0.0% | +0.0 pts |
+## What the depth columns cost, and what that says
 
-## Split by the filter being tested
+The haircut from `printed` to `net $1k` is the part no price-based table can see. It is not
+symmetric between the arms, and that asymmetry is itself the result: the filter is
+selecting for pools deep enough to leave through, which is a different claim from
+selecting for pools that go up.
 
-Pass = market cap >= $25000, 1h volume >= $1000, liquidity >= $10000. The arm is read from the
-eval record's own `status`, not recomputed. **The pass column is the 'final arm'.**
-**Descriptive only.** Q1's verdict is a permutation test on 24h net return, not
-this table, and no verdict may be read off these two columns.
+Caveats on the depth model, stated rather than buried: liquidity is only read at the eval
+and 4 checkpoints, so the figure used at a hit can be hours stale; `Q = liquidity / 2`
+assumes a balanced pool; and a single 15-minute candle high may itself be one small trade.
+All three push the net columns **optimistic**, so they remain upper bounds.
 
-| Rung | pass (n=135) | reject (n=886) |
-|---|---|---|
-| 1.5x | 67 (49.6%) | 74 (8.4%) |
-| 2x | 46 (34.1%) | 54 (6.1%) |
-| 3x | 30 (22.2%) | 21 (2.4%) |
-| 5x | 16 (11.9%) | 11 (1.2%) |
-| 10x | 5 (3.7%) | 5 (0.6%) |
-| 25x | 1 (0.7%) | 2 (0.2%) |
-| 50x | 0 (0.0%) | 2 (0.2%) |
-| 100x | 0 (0.0%) | 0 (0.0%) |
+## Fill-rule diagnostics
 
-## Why tokens failed the universe gate
+The pre-registered fill rule's own conditions, measured: of 33145 in-window candles, 0 had
+no volume and 1 sat below the death threshold. GeckoTerminal only returns candles that
+traded, so "the candle traded" filters nothing, and liquidity is read at 4 points, so a
+pool dying between them can still have a rung counted -- a limitation
+`preregistration.md` states itself. That is why the net columns exist.
+
+## Why tokens failed the tradeable-universe gate
 
 | Reason | Count |
 |---|---|
