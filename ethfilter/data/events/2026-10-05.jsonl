@@ -5268,3 +5268,295 @@
 {"e":"ohlcv","pool_id":"robinhood_0x244f32647de21c86b062bb6e8e0482f7f7e95633","status":"ok","n":23,"file":"candles/robinhood_0x244f32647de21c86b062bb6e8e0482f7f7e95633.json.gz","t":1791225440}
 {"e":"ohlcv","pool_id":"robinhood_0x68c538ecf80d57654e91db8314ec1de8ea1ecef4f81e58456fd64dfdda9dd007","status":"ok","n":28,"file":"candles/robinhood_0x68c538ecf80d57654e91db8314ec1de8ea1ecef4f81e58456fd64dfdda9dd007.json.gz","t":1791225440}
 {"e":"run","stats":{"gt_calls":10,"gt_ok":10,"gt_429":0,"gt_404":0,"gt_err":0,"halted":0},"run_id":"2026-09-21-insentos-v3-robinhood","t":1791225440}
+{"e":"pool","pool_id":"robinhood_0xa7118a6f3944567611b31816483ec652f115ffc1a4a8c6154e61c73a44f3b994","net":"robinhood","pool":"0xa7118a6f3944567611b31816483ec652f115ffc1a4a8c6154e61c73a44f3b994","token":"0x66ce0886802500c84b4c7867c69013a906fb75cc","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"NOESIS / WETH 1%","created":1791235837,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xfef31961c8550bc35c6da03401d4dc6f29d447f35aa38c395a8d7a7e2bab79f2","net":"robinhood","pool":"0xfef31961c8550bc35c6da03401d4dc6f29d447f35aa38c395a8d7a7e2bab79f2","token":"0xa72d2d756923ec80231a6c011de21149ccb93a2e","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"ROBBED / WETH 0.586%","created":1791235821,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xb1f4f6a4ab546ee95e7b59e84e2d363933ba6046","net":"robinhood","pool":"0xb1f4f6a4ab546ee95e7b59e84e2d363933ba6046","token":"0xd41bd552ec7c1d5a7aa367df2fb2da437265d795","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"STRT / WETH","created":1791235794,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x70a6149f659034a67ebb334463927370b9d65a3b2b587aabd7239762e98026db","net":"robinhood","pool":"0x70a6149f659034a67ebb334463927370b9d65a3b2b587aabd7239762e98026db","token":"0xed155aff2ff8c92844511b3c31ae8fbd0d450e29","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"GULP / WETH 88.313%","created":1791235772,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xdc7156f61a817d9067875ce3dafb71a5266d455a100478add9cb224c2eaa3740","net":"robinhood","pool":"0xdc7156f61a817d9067875ce3dafb71a5266d455a100478add9cb224c2eaa3740","token":"0x68bb06d2ebee1247d828527cdfe67f033c6cb31d","quote":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","dex":"uniswap-v4-robinhood","name":"CTURN / USDG 60%","created":1791235771,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x2ef9e7def138c1d68050bee18c63a0f5f322af8293b697a3db677bd946316513","net":"robinhood","pool":"0x2ef9e7def138c1d68050bee18c63a0f5f322af8293b697a3db677bd946316513","token":"0xdff0156d686751882f01a9e1db29856c052412b9","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"KEYLESS / WETH 0.158%","created":1791235745,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xf3f40e17ef94f9a2b9d328cf0e8396b9c211409ed00cb68601292db60a417b2a","net":"robinhood","pool":"0xf3f40e17ef94f9a2b9d328cf0e8396b9c211409ed00cb68601292db60a417b2a","token":"0x9fc89852f4db33a541f51b45c916c708a3ccf777","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"cbBTC / WETH 0.25%","created":1791235704,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x098eca9718b888ca567b370e99c83e98588ce391f9a164f285c63b912ebfee5b","net":"robinhood","pool":"0x098eca9718b888ca567b370e99c83e98588ce391f9a164f285c63b912ebfee5b","token":"0x6136945241234a859b855719de9077fc3e387777","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"BUCKAZOID / WETH 1%","created":1791235691,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x17f42a3fd5ddbdf69d64a82a1a76454aa6d6468287a04593057c6463c702eef8","net":"robinhood","pool":"0x17f42a3fd5ddbdf69d64a82a1a76454aa6d6468287a04593057c6463c702eef8","token":"0x48ef3dbdab97c0aaee45f548ae4c877cec0cda84","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"cbBTC / WETH 1%","created":1791235687,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xcb190c8a237fcf7de446cf36bb53b9f434f422e14264b8881ec4a72699a288bf","net":"robinhood","pool":"0xcb190c8a237fcf7de446cf36bb53b9f434f422e14264b8881ec4a72699a288bf","token":"0xe3efef8982dd37d4aeb9a298d1af3368b32c02b6","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"SATPAD / WETH 1%","created":1791235685,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x345d6ac9056f884f66f882a85fdba63708009c46","net":"robinhood","pool":"0x345d6ac9056f884f66f882a85fdba63708009c46","token":"0x900dac1e0e972bbd98e6f6622a6ee02ec7407f15","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"P\u00d8NSTER / WETH","created":1791235659,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xf46552d985800d531ca92a5572cbf9351c19b074a06f84ad1d5342b4748b9b7e","net":"robinhood","pool":"0xf46552d985800d531ca92a5572cbf9351c19b074a06f84ad1d5342b4748b9b7e","token":"0xed155aff2ff8c92844511b3c31ae8fbd0d450e29","quote":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","dex":"uniswap-v4-robinhood","name":"GULP / USDG 86%","created":1791235656,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x6b02ba1568cfe3d4800923dcc747cf776d54b417","net":"robinhood","pool":"0x6b02ba1568cfe3d4800923dcc747cf776d54b417","token":"0x5ac68032f3b70a00d4727844687e68dd4c9b6813","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"LOAN / WETH","created":1791235655,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x3f79a0eeb0eff93fc08db5b07445c5138cbe4735","net":"robinhood","pool":"0x3f79a0eeb0eff93fc08db5b07445c5138cbe4735","token":"0xfcd2aff5be81de2c5dab90f9f08eeb4fa0a271b1","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"PORTNOY / WETH","created":1791235648,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x890d6a748055dbfc7418b2b72019c036f12c4cbd87f8c575c812275e2684ca22","net":"robinhood","pool":"0x890d6a748055dbfc7418b2b72019c036f12c4cbd87f8c575c812275e2684ca22","token":"0x6f4a7e023197dc5f7f4bd296ecd14b8e84206526","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"NOESIS / WETH 1%","created":1791235630,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xc4d83dafb987095b2962f911a50bbe11275e7bf1","net":"robinhood","pool":"0xc4d83dafb987095b2962f911a50bbe11275e7bf1","token":"0x4806d6a8c09e76fd299c72425a9211eb2a64086b","quote":"0xc6911796042b15d7fa4f6cde69e245ddcd3d9c31","dex":"virtuals-robinhood","name":"BABYHOOD / VIRTUAL","created":1791235624,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xb77e397a392fd70fc6487809d6cdbc2fe3603270","net":"robinhood","pool":"0xb77e397a392fd70fc6487809d6cdbc2fe3603270","token":"0xe8768374dc47ee43039d158722315cd21cf3af86","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"HOOKEDASSE / WETH","created":1791235623,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xeec0c036381e44b4531d00ff3d55b9c2dba29051","net":"robinhood","pool":"0xeec0c036381e44b4531d00ff3d55b9c2dba29051","token":"0x5a966c5bb9195ff419402b349554d624fe000354","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"enogu / WETH","created":1791235615,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x533310aa8b312a732b9d4fb9a429820db6f8bada","net":"robinhood","pool":"0x533310aa8b312a732b9d4fb9a429820db6f8bada","token":"0xe32bfb5bad2d993eedf80879723ffe1310d98e03","quote":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","dex":"pons-v2","name":"moncock / USDG","created":1791235612,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x9b3be9dac064e61151ef2441beb7d1a6f62730547b8c16f6dbbf443505f3e53b","net":"robinhood","pool":"0x9b3be9dac064e61151ef2441beb7d1a6f62730547b8c16f6dbbf443505f3e53b","token":"0x1db9b9fd56110f2eea12923cde03428633f733bf","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"HRPC / WETH 1%","created":1791235589,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x0656bd9771fa6503fe8174b2ae26d44f629d0100","net":"robinhood","pool":"0x0656bd9771fa6503fe8174b2ae26d44f629d0100","token":"0x496e9f8387f8de8cae186312eb278077244d6f26","quote":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","dex":"pons-v2","name":"Tessel / USDG","created":1791235534,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x3a21a5446848639ae242a7fade1732bcc922facebb798681373adb2305b5b8b3","net":"robinhood","pool":"0x3a21a5446848639ae242a7fade1732bcc922facebb798681373adb2305b5b8b3","token":"0x64094924792b4aa00ef82e1d5b04206eb6044f70","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"LOAN / WETH 1%","created":1791235520,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xe1c1ed3a0198e07ffc2830d2fb22965e11f14b61","net":"robinhood","pool":"0xe1c1ed3a0198e07ffc2830d2fb22965e11f14b61","token":"0xa95dc9460dcae71d5e0d7c2027aefaf46b1ed64d","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"TACO / WETH","created":1791235477,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xe71318d13e6efdd3a2eacbe9c10a5229470ebafccc92742c72aa1e743b511db9","net":"robinhood","pool":"0xe71318d13e6efdd3a2eacbe9c10a5229470ebafccc92742c72aa1e743b511db9","token":"0x2de98850e9fce14996bf34fc04c01e75a7b30ba3","quote":"0x0bd7d308f8e1639fab988df18a8011f41eacad73","dex":"bankr-robinhood","name":"GAS / WETH","created":1791235476,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x1774e9a488f6a10476a6fb1a66c1028858c9c5e96b2eab00ec2ec5e0bf77ca6a","net":"robinhood","pool":"0x1774e9a488f6a10476a6fb1a66c1028858c9c5e96b2eab00ec2ec5e0bf77ca6a","token":"0xed155aff2ff8c92844511b3c31ae8fbd0d450e29","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"GULP / WETH 3%","created":1791235441,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xae6e275e1a25168823c519f4a35dfb5e63349b6e20356a53bbaca435996e3c20","net":"robinhood","pool":"0xae6e275e1a25168823c519f4a35dfb5e63349b6e20356a53bbaca435996e3c20","token":"0x82da4576085389a115694bfbd2f8673a30b51e18","quote":"0x92fd66527192e3e61d4ddd13322aa222de86f9b5","dex":"bankr-robinhood","name":"TRANNIE / SGOV","created":1791235426,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x7e247439f1559fa9df4a5df60190513fc0a6a137","net":"robinhood","pool":"0x7e247439f1559fa9df4a5df60190513fc0a6a137","token":"0x2d82559f491d32e5c254f394a74aaa9007f9bec8","quote":"0x1d11f0496982706c5e14a514d4e79f2e6bde4516","dex":"pons-v2","name":"TRANNIE / djt","created":1791235425,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xd858f4fc1624561120a8e38d49a4503972606b35","net":"robinhood","pool":"0xd858f4fc1624561120a8e38d49a4503972606b35","token":"0x4e889db29d57e8d4eb5179a63743cd60b6424df9","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"somunia / WETH","created":1791235390,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xc206142d95f13bb141482b0fc8e05d78dd5d9f4301a7bea2f9d64a74cdd21bef","net":"robinhood","pool":"0xc206142d95f13bb141482b0fc8e05d78dd5d9f4301a7bea2f9d64a74cdd21bef","token":"0x0515d37c5387aab8ee6494999d471623500c8777","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"SATPAD / WETH 0.25%","created":1791235356,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x7874048830aad2a3edd4ba8e302ee484d5fa0dd1","net":"robinhood","pool":"0x7874048830aad2a3edd4ba8e302ee484d5fa0dd1","token":"0xce3ef439eb9590522ca72dc149bb7fa4f639cb6b","quote":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","dex":"pons-v2","name":"GRID / USDG","created":1791235346,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x0369b4422a0f518abe70a716ba20a15781f684bd","net":"robinhood","pool":"0x0369b4422a0f518abe70a716ba20a15781f684bd","token":"0xa17489ab65f069fe5b1d84e154e559c0e1c20c6b","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"HUMDINGR / WETH","created":1791235344,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xa0124eb980e3aa8e9562f30b8310910c25d3ae63","net":"robinhood","pool":"0xa0124eb980e3aa8e9562f30b8310910c25d3ae63","token":"0x743cf1c9ea2c433c9eefd03f9b8895d53f2da780","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"ROUTER / WETH","created":1791235344,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xdc9181013d7be44f0cbcf29112665fd677d8cd5ba9d30a45e9608ac11e2740c5","net":"robinhood","pool":"0xdc9181013d7be44f0cbcf29112665fd677d8cd5ba9d30a45e9608ac11e2740c5","token":"0x304c0d99290d43a2a61f79458b4c02a6f3c7d777","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"cbBTC / WETH 0.25%","created":1791235339,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xcbf27ad146ef9631c1b1063028ea19f0e961b7f6","net":"robinhood","pool":"0xcbf27ad146ef9631c1b1063028ea19f0e961b7f6","token":"0x15806f061cce97c464e0d06d55758f05be3dcd8e","quote":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","dex":"pons-v2","name":"moncock / USDG","created":1791235334,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xbbb52a73ffdb83690e7d44dc26de06586e5996f6067269862a8b8950e7e27fa9","net":"robinhood","pool":"0xbbb52a73ffdb83690e7d44dc26de06586e5996f6067269862a8b8950e7e27fa9","token":"0x85571a9ebf2d34a6465cf10e722421e3ed1d411c","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"ARGON / WETH 1%","created":1791235333,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x23487fd20ba147ee23347043dc8ee920e5e2ff235d09588a2327254273372088","net":"robinhood","pool":"0x23487fd20ba147ee23347043dc8ee920e5e2ff235d09588a2327254273372088","token":"0x21e2b58077a4515b75ec4f8829439657398d1674","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"SATPAD / WETH 1%","created":1791235330,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xca210df7c0139bb48dee14b5fead41fc488fc423cb13f89b47f59e02abb625a0","net":"robinhood","pool":"0xca210df7c0139bb48dee14b5fead41fc488fc423cb13f89b47f59e02abb625a0","token":"0x4b9e5dbd006dd1622f0ba743e378dd7443e6f17e","quote":"0x0000000000000000000000000000000000000000","dex":"uniswap-v4-robinhood","name":"PUP / WETH 1%","created":1791235328,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xecd64c055dd43d4863f094c9260485163dfb961d","net":"robinhood","pool":"0xecd64c055dd43d4863f094c9260485163dfb961d","token":"0xa96ca90b79a717b9e86819157f5e8d7f8086447f","quote":"0x5fc5360d0400a0fd4f2af552add042d716f1d168","dex":"pons-v2","name":"chog / USDG","created":1791235319,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0x41bafadf0662196257430add914e3fc23322bb8a","net":"robinhood","pool":"0x41bafadf0662196257430add914e3fc23322bb8a","token":"0xe2aef684ed5468d2850e07cdec83476dfdd139ba","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"CLAM / WETH","created":1791235316,"t":1791235932}
+{"e":"pool","pool_id":"robinhood_0xaa04b294f23da44d261fe4634719774d1faf9eaa","net":"robinhood","pool":"0xaa04b294f23da44d261fe4634719774d1faf9eaa","token":"0xe81c1190d835b6850d2fd03d9d78031417fa761f","quote":"0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","dex":"pons-v2","name":"ATTN / WETH","created":1791235298,"t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xb61e99dcf68c6504e22fa9510f614e17b0bff1b7","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x11cbb7bc668faab9de566903fcd7df23d918f1e2","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x233710874e135e036c835b4a96d5d39bc4f9a8be71bbf762af7636fe713d5226","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x1d08ab9602dbec9f6a341b8e76c4c42994d854cb304d21d3ac713bf24d8d5ac2","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xa4fbd300a05dd1824b585e24918b9f86d6cdf024","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x3410f6b94d52b4ee8ee2b0baaef8ffc5bc47b009","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xf3dd2227ec0f5fb9235ba758e6dd9ee6e3bb6311cdc64f387664024737ad59e5","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc2d61fd0cb345237bb1e53857698e6254bb6473e","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xea9293daab6c6e2728f375d6e681fc0f76891b47","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x09cca169f6f9bc8f95b6f39e1398e057fe84b0a4","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x98c739ac3cab4bba8dfd07a3110a3e246d26df7f9b207376d6a2b752f8ebc985","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xf25328c2005da9a67d9c7b4891912b41e8e1efc0cbe4dc31b6fde82f9b0f958e","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x3c4598fcd12fb82713e10ab03e6d50d4ede86e41","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x8685fd2fba7e853ca6dd3cadd1a41ae8ddc8a168","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x089def8bcb42d8e874d70eb4b1bf49b1816e7996","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xa45b1b7f2cdaf3d9058f2da31a516eca9dfd739b","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x31bec581720c8f35fdf35d18ae0d9e6a60afc477","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xaff91b83636f88774384a27d0cda3de3068380c42a3c891356ed27438b391810","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x934c3cebd821f1218bc0e49cec74106bfd6523999f3303adba427e4d60b19bd5","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x3093fed76cb3ebfd1448585d4865c068fe6943dd0fd98ebebe1874f45c9ef8bf","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x68d933cefd3c0efb4ca05fb3b0ba271a7d0b5b99","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xb2d2d70342dec9ed67d28acc91012a7de36de02b","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x58be598a462923dd8958e46ff840cd55fb33f2b0","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x7ac2b91baa11755a9c32d78a89aeded23bcf8ded","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xf4d0d6a93c0f3b556fbe2c49480148de3c8788d7","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xb6c11962da906e5906991c498271a5d5a0500eb1","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xfdae43be920d948897ae174f23bec52530f6d5a0532ae6cf132c86e22ab4e02e","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x365ca21eaaa78857076c31c7ed6870943ba31240","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x41c8e33b397fd4957197ca6f000bc9e3044aa984","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x7e1eb8512bcb3819188ba105688ec8998fecd196","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xbb60d0fd723498cd4d3479f52b99642c8c5a1b6bc974c266321466e4701ebaee","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x781f71b8bd42ae656d8f6070a65c1444a2f51bb5","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xa10ed18bd99f49de370200f9008a37f0efa53426a60159a364be519effc771e4","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x6513ff62976b2586724dbdb63a4520eec8bef9db","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x77c1d28928a0f8fbb3143f82f7e203e420504f1c","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x90e2420d6121f8f0cc191fe41649d99897a03ce8","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x5828ea0bf8089d3b2e4f783122a359b74352796f","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x2fc06a40515ae69b2521eb2cfbf1bc64c5bd1212","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x3b7d128b613f4330a5529463757d426a91df64b4","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x6df45a1abefb6f488f71c59cb1ae0e14795f4c07","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x1b96cd1f2e2fe62030f87465f66ffd9eb7280215a26962abfb251b81c3910c92","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x775c71182c1c3538046519277383abd593725d4eb64e207addbb94d9cf81bdbb","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x1cbfc59d6f3b45fc88d5cbe45118a7eb07d92146f7f91374fcc2be6a52fabf4e","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xe8a0ebf34356dc935c21865ef4cdd7394bb80514","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xff0e5f20dd5ba6ab4321e32ed5e6f9bb3566f5da","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x4ca090a302d3159e70ab7dd25d954c3f221b8750","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x60a4055bce387ebd452b16cb6cf9a8209af2ceb0","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xdd8fd0151d05fad272e9b17b742bd5f75c3fdde7","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xf64ef0c08f4f8e5b923e6e4377c7e28040f634c84aa45e853c355b72e229c70e","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xfce7d36b6e5045f81acd9ebfa74c2af961fdcc98","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc12c4b271c484e958a4527c3934577f2b2b3e5dcb4f459f2bf124d93fb94383a","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x38a92f5926531abed13d0fba538d8e9fdd75f8dae8626e714ea7f35782fa5fba","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x96155de0bf2cf3c86a6e4cf5252f174c3b9ecce163497edc53659dd112ae5148","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xb23a644ca9947e78a679664bc63b857c8bed24a7d10e927d7dd55dd71669a465","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x88664a907b8f2b40dc225f7175040d1dcaa97f00b83d281be46c83b34ef77fb4","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xe613aad4ab47840a2798a872911615fd9f461498f2a5dc14924b256c58f37fbb","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xea429e031c019ca457ac44e00bf3e1ebd2360ab69d027f2894c0c2d75f55ebef","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x9c242ff6b44099368c3f6d226d9d5a34c73d7e17b470dae2d81c71496de981fa","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc7f44250184049321370d63d377a9baa239b4315b2c0381cabfc48069246d6f2","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x4ffd536a9c29288fb201471d10cb8ceec9ae11f9afb1493e93db70380a237a6d","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xaa25b2717447496ce89b24088f7b3afde6e1c287b230f9bfe367dbe549fbca05","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x9a73fb0e0a74dc63d8529ebc345238f4f0ab193544817c52d969653cd0e230f3","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc6731b64be7a69247b2c4dafd85338319cedc2ace0aabd05070bf07092c75d56","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x2925476e718b6b417cb8df503fca194bd2992e52b3ec91c715c0cece9d6a6f30","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xf79e76e14068c585dbe4bd6bf30caeb7547c5159582089e04314aa0fa382229c","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x061b9870851ded370631c729e409ae8334fe677a94bf5135976a1725a0023bb0","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x0728fdbf0115804c87e6c79635d99688a98134179f7f44152ab2751296a13972","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x486bd552a885681379771ee37fa1f7fb2ec8335831112f1cb49802da5df5300e","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x55276055e62244780ca3fa05b27d23a5e4e6f2a8475a9b4a85f85482b11ef126","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x190f36294d78be25492e6ab8c2742a1c91d0c038023361cdebeb720c425e602c","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x3a9269ad472756fa4bff72ec774a81068fe6866ffb6a4e0bdba6948ca5694793","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xbf23d1a9a99307517df94624caf00c35eac38e7458c5096bba21bc32384418ee","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x71d184b0fce4682b55ad0cc0d4e915e965b377828e3afaf8f65f2aecdc63c06d","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x2a89e95a62271349f6d4d3de96f1c6952e40f1dd8f7d77ea23d80ef2b059bfd3","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xd55d50887add1fed1ced2ca14d5d2234e1a036d641f560a9577f735d06a32216","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x92f9a5fdbbb8a8225e0d0982b954075c7d35c8735822d6d1615c60ea9d0456c8","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc62af9586961d36de7f953ec886147c6b3927b9392e5630bef80c8d3c32a145a","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xb42952dad93fa910bbbf5e5e9d02766c336c8eaa7dcc0790c354409961214073","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc32fa8ee590de59ae0f12078ae5c2eff42191174b6efac1a7b015b954de77cdb","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x759afdff6fe9474e7b3ac5ea2e17dc5528b1d2b152ba62b53b116da9e65d24ba","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x266bf828477ff285f977b4b590316fdb32007039","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x28173f1bcb40b43ce61f6907a2d82a94eb2a99fe","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x62e2736b8817aff1cb63da331c89e443b76fe0ec149922712ad21720ebb6cfe1","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x3cb4ca91691be8fa2e50986ec39eb6647ff2ccd9","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc55945751b9649363bf4fa5f6ea83062e973f7de","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xa2c1585bfbb967bd03c49f3ff99b6f66028280b3ad7b92fa88d264be93eec3cc","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xb5049cddfe9b7b364ae67c1ff013bc7c00fe3887","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x4a78be3aecf20389592944b6ccbad1b92e12ba4a4a9f700d8de30c13141c188b","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x0cd1ff15c45cd084e6dbf6252b1c8bdd8c218b76","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc9b9eee8f1a4e77bdb305af56265bae38c1923f08cd8ab88baa370cc36c24014","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x567d5fee2e5c99efe646fe2c0fec9914cfe5eaba","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc2e752a1de784e6dc173d875cb54f66db27452a5","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xa6d08b77e9778ee92b6c588560e5d85a9284f137","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x953f5f9354c8f77d1f4f8075185d6b0451eb35bed5ddb35707c40e044ad8ac2d","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xed1410b30554ea6ef97a07a71f97c2c8ee95bedf","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xee2da3bd5a3f2515cf14a411a804c1b9edf9a9c60235525bf24ca7bd531e42cd","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xdf198626b2214acf03c45b87543c0885e49c7207","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xc5bc2b582b7ecfbb52ef742dab8fdd9074c14a8d","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x374c03e2321667644a7c38af0e3ead48a62307758e45bf00f336f15ee379eb25","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xaf41d867f992588f0c0db0d11ae4745849012e89","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xf0fc31ba9d1142bbfecbe28caea86cffdd0fc665","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xbfc904ff15dc47d1154700035b130063fb76957e2a24fe7dcf5af72fb264cba4","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x5f9c9e29bd127623232998484071b41037a2b7dd0f4d08be794c6d997bdbff8e","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x6c06843699527b166480033e636903d715213ce714516fd5b5e70d22e3349595","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xcf1738bb1cac79ca0623cf931b8e6536394942d896f3b0d9e33e8442cd40df6c","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x5264c236dab6d162e68f1b41c74bad488bb34d58b2e6159b3c6f6b71cfe3d2ef","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xf170023e1ad3a9ec9d884e9062342ccea2904b82","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x43e6203487cddb6870514dc56dd75c6ed1ce678d","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x5dc9c2960c0ce08465131f981bf887784ea9eae3b0d8b4aa8560c39ae7359c99","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0xe31a536b9feda6046012ca1d119bec6d5005ddf826b9520a035a56145a4653b7","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x7a385ce80f944f3a6b776a670e859ae3b4720822","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x008c6b77e47ac0f0b8b90e645db19468d448777e","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x1f5f4031946facd750763d83af74e2b1017f42cb","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"eval","pool_id":"robinhood_0x3b54274c2d16eaa895ac40342376285aad9745c132f814633ec3db353c2c47dc","status":"missed_window","reasons":"never_read_inside_window","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x730b367ee2a83a480d2200b5296f156020f2763bad90537d59f261425089e7f6","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x913863f23b16c4ae6ed04d259876e9afe50f696f","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x1d1acccd4b9eb95eeb61ca9121c7f78d273217a3","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x9b2782fd747ca0d2d24142bb4629633c6b9ea27e","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x2b9cd1c854388f0dea94440dd6ededbc9d27d41032b64ca9823cd77e73a45426","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x5608ac886cc9aed37fd6303d91b262d018e3a491","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xc52c6b7fcbe0becc6945ae6b1545a21349f0ceb8","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x7ecff4a57c4602c8b7ea497e70fa5c5e02c42cbc","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xfe10276a1620502a391984862d41ca6c3deb7084","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x1d3854653b39c70626b9e1e7402e650aa951c599","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xaf4242965e822e8f534a643ae59d1b0df95596b5","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xc6d510828897d5b1ea7dd376c221e24157db5effa5a9ed9a2782cdd38e56342e","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x4fd0096368ed6426222323467ecd3a6b94a56cac","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xd25f6924725312be6f6fe8226ab7ee0ec6c50ce4","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x653363d8d61445a47efe8b4f97d5930863c9f45d","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xff9b86036a40100b94d204f4514e1973b29216ee6feb95955ff9d70f20070799","h":6.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x7c64fa5b12d94336576f7ef2cb1efa040228736c","h":1.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x271bdb6c199af1a4d817ea35256c2bc4208c4b51","h":1.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x742e7088f64af7431a449770d98eaad0346ebf1f","h":1.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xf5fc6e86c59116c3c883eecd6e6400a2935b112e","h":1.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x347fbbe154f9fc57e5542338bf70273ca6c517ff","h":1.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xfa5b6962c0560b3dbdf8d7dca6e352223c3ea087","h":1.0,"status":"missing","t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x7a61056e63e0aac8b004809f4025202fb95a9180","h":6.0,"status":"ok","price":4.64428311083179e-06,"liq":4651.6845,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xda4f8fd220defa0aacff860ed54e2477f3ff9b95","h":6.0,"status":"ok","price":4.44485125962752e-06,"liq":4441.5443,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xc536fc52e4cc2a2a0981274ab44c6c2a53d29ac7","h":6.0,"status":"ok","price":7.96224206241275e-10,"liq":0.04071585777,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x291cbc212f7f9a162ae1bb7ba5576192fc851f0a","h":6.0,"status":"ok","price":4.53070878736424e-06,"liq":4535.0212,"sellers_h1":1,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xed1b9cf4558d76e5fdfdd78718a470cb4952df9d","h":6.0,"status":"ok","price":4.40612054002634e-06,"liq":4422.5645,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x710435aee65c3c14940f02a9c376e733b33100a3","h":6.0,"status":"ok","price":4.614069138525e-06,"liq":4602.6015,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xa55bb5b553402cd7069e13cfd0a3443dafe0410c","h":6.0,"status":"ok","price":5.86341833220807e-06,"liq":5793.4484,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xe7a53916712bbb2a606513f9fe63d0121458e5767329c5fa5a48f3fce8c3a659","h":6.0,"status":"ok","price":5.02736953540373e-06,"liq":5703.5863,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x0aab9919c76f916e6aea13729f86b523ca2e8972","h":6.0,"status":"ok","price":4.41153650109774e-06,"liq":4428.2585,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x8891450e98eba9d553d713cfea3c3dfa7a8c8650","h":6.0,"status":"ok","price":7.14005907510097e-06,"liq":6852.8546,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xde8f19fe85e7612b5d086da99b8caff600a2cd165e0e13aa485d39c08eadaa97","h":6.0,"status":"ok","price":5.23499669595412e-05,"liq":17564.3104,"sellers_h1":21,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x51ae63ac616e85b845865c84ef35f653c7fd52c9","h":6.0,"status":"ok","price":4.40722897199145e-06,"liq":4425.5471,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x05974a2b88ebbadf01d17d52b2872517aadcdb153526b275edd3336f4223eed5","h":168.0,"status":"ok","price":2.29098032601058e-06,"liq":2396.0575,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x70e5ca505651089842cd0f50a0f79fd53564cac8","h":168.0,"status":"ok","price":4.480276112e-06,"liq":4640.6345,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x5ca0bb0d45507f78b64d7abaaa4a9d25e2c408af","h":168.0,"status":"ok","price":5.487478762e-05,"liq":0.0,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x3cc23e25302e6fa4374190391688ce7127e3bfc2","h":168.0,"status":"ok","price":3.275540408e-06,"liq":3255.6581,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xa829cb972d1051885bbde8c207a987aff4ec19f9","h":168.0,"status":"ok","price":4.425194054e-06,"liq":4401.5126,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x0ccde8b65e3257a9faec2116bb764afd57ac99ec","h":168.0,"status":"ok","price":3.399374257e-06,"liq":3339.9749,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xe0949d8041f8975d0d0a46f5703f920147cbf79bb630c9a3b3c739f301d633b4","h":168.0,"status":"ok","price":5.321978528e-05,"liq":48558.4929,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x7d45a413fc3763967125f90d2be79efefce18a3a","h":168.0,"status":"ok","price":4.504895938e-06,"liq":4603.4341,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x25ec828c0e6b67ebafd1bfd2e67f0c4cc0de17ee","h":168.0,"status":"ok","price":4.9159980397302e-06,"liq":4915.7586,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x6efdf1c3091f02690c032ca7a1904e7cbed332af","h":168.0,"status":"ok","price":4.548437655e-06,"liq":4523.7917,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x611bd43c0237217726f89a16176817a076827145","h":168.0,"status":"ok","price":4.494822764e-06,"liq":4470.4287,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xdb098383e8c0d324a7e1858cb7ce8c7737559ec4","h":168.0,"status":"ok","price":4.518755525e-06,"liq":4484.4532,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xdb7373db924842ab0d27c4ef56c38dc6c5725e30","h":168.0,"status":"ok","price":4.428776367e-06,"liq":4403.3897,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x36cc237097305897f150751a23f6cebebaca600b","h":168.0,"status":"ok","price":4.382027459e-06,"liq":4361.8255,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x0591887c103f12de365975c0fe10e2ec4279d6a4","h":168.0,"status":"ok","price":3.327387525e-06,"liq":3338.0824,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x0a4ac5537c8ed841524594d1acaec94a8a09f81c","h":168.0,"status":"ok","price":4.584955906e-06,"liq":4559.9928,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x333b9cfd7f5892f10f4db28d278e20826fb1ff5a","h":168.0,"status":"ok","price":4.435265455e-06,"liq":4411.1662,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xd9044214c686b610e0b57fa06fe885a6c4461ac6","h":168.0,"status":"ok","price":4.374142636e-06,"liq":4347.8358,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x9786d94d671d06c38927553ba16ec5d2c1b1fdca1c821c5543f351758c141c9e","h":168.0,"status":"ok","price":0.000353373361,"liq":2047.3711,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x77d19d305eeffc7905becc8bf35983d804240622","h":168.0,"status":"ok","price":4.457131908e-06,"liq":4501.2226,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x7bcaccfcebb9f473c394a37e8c97b125cfcb1eeb83ec1d87682255471e231bf3","h":168.0,"status":"ok","price":1.554471876e-05,"liq":19455.5868,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x632e3a04d45900307ff81458ddec3bc284b7f708","h":168.0,"status":"ok","price":4.454812138e-06,"liq":4492.0584,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xe7e9178006fcf30df2f493e5203b54728187e9c7","h":168.0,"status":"ok","price":4.527822969e-06,"liq":6894.7672,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x3361ecee75c52083be88e7647f985db994bdb698","h":168.0,"status":"ok","price":1.451054403e-05,"liq":1.3409,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xcca75bc7a7c4b68b98706e73f4900144746c929d","h":168.0,"status":"ok","price":4.373203234e-06,"liq":4359.4896,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x600767b2c90be84ae163440c0a4c87b0e60d4ec6","h":168.0,"status":"ok","price":4.52620384076894e-06,"liq":4456.8728,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xe8e303f6273ffa274e094fe25990cfd929750a7f","h":168.0,"status":"ok","price":4.52403094036409e-06,"liq":4512.3236,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xdc2aea79f3fafb530534590e71b13b3e4bcb5a09","h":168.0,"status":"ok","price":4.52469078573653e-06,"liq":4513.1371,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xc3f6b0776c0b872941fb520efecb054479b9227f","h":168.0,"status":"ok","price":4.438273645e-06,"liq":4416.4712,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x001fb1c3964362f4628333f274b8a208336e644995710578232abfb9b047cb65","h":168.0,"status":"ok","price":7.925977985e-05,"liq":0.0,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xbeb0a2e9a04682f1490d307c222bc5eff3f337f9","h":168.0,"status":"ok","price":4.462960837e-06,"liq":4449.911,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x6b908340993bbb9cbb6d92d1e542e65dd4e39d1f","h":168.0,"status":"ok","price":3.170606428e-06,"liq":3190.9527,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xe86559b68e1a7aa475db83c003603109b09613114652430c208a3251843b1f90","h":168.0,"status":"ok","price":2.03124496500193e-05,"liq":24340.686,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x480feef675f5f7b5dcb7b458b2c61d2cd3c4d05d","h":168.0,"status":"ok","price":3.288848669e-06,"liq":3275.9734,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x03b047136c91cc711253d6cc32e7ae55a4fbebf3f9c2b9e7de998874c09f5c46","h":168.0,"status":"ok","price":4.0376322092057e-06,"liq":6160.6577,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x2436ad9c5d9a5efb97892f9241c4cba7d93a4d09","h":168.0,"status":"ok","price":3.775649212e-06,"liq":3769.412,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xaeee9bbcad2f52edececb45d286c57afe06c830b","h":168.0,"status":"ok","price":4.454618853e-06,"liq":4441.2091,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x8d576c6ba3b873a481d5be92feaf0d180e6534c4ac650bd1276943b890f8804d","h":168.0,"status":"ok","price":2.101543661e-05,"liq":22031.6998,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x6370e54aec91c4fc96211db2392ec8c58ae7e40a","h":168.0,"status":"ok","price":4.396226996e-06,"liq":4385.8441,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x4ddce0c5ebe77ac0a1886c97e004f5ee5f6e4083","h":168.0,"status":"ok","price":7.52886084499589e-06,"liq":7161.031,"sellers_h1":1,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x0ddf164424f6fd4483b4d8b5f120bf0234157f2244eea972153656b345c4ca50","h":168.0,"status":"ok","price":2.05070785718966e-05,"liq":21707.2025,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x1e37513c7d1be268d7b0bc46854d4ac1d5e6fc2f","h":168.0,"status":"ok","price":4.457143906e-06,"liq":4501.2226,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x14aa1af2be0ba9b0061d97978e5bff1147ff6f21","h":168.0,"status":"ok","price":4.509889103e-06,"liq":4500.0602,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x59579348430cca1aeeea72ede09a6bd8db4244d1d898348adfdb7567b8bbc403","h":168.0,"status":"ok","price":2.135098615e-05,"liq":21345.8087,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x85336f2ccb4c6159ffd813400566fa236baa6b01","h":168.0,"status":"ok","price":4.400069458e-06,"liq":4393.583,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x7d9907b856875d9f3f23fc52fffa7e11f6210b2c","h":168.0,"status":"ok","price":4.756356547e-06,"liq":4774.8004,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xf2dbfffd888918e7ad79437130c43ab945c3eb7bca6afcb437d21029f741a182","h":168.0,"status":"ok","price":0.0001518480078,"liq":0.0,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xb477c5d3e1e1eb4181b503da5da6f65b632dc1ad","h":168.0,"status":"ok","price":4.48189350108814e-06,"liq":4554.4079,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x61f8b3b8832d9969c156bf25f3bed5ed5372190b6aa89e95fec4015682f29cb3","h":168.0,"status":"ok","price":0.0002970332952,"liq":47724.9755,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xd7294890f90aa030b1f46119b5db899e963d345b","h":168.0,"status":"ok","price":4.43858105e-06,"liq":4445.9129,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x34723277077cdae1d989e831599f6ef095079388","h":168.0,"status":"ok","price":4.440085127e-06,"liq":4439.483,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x9cebed8aacea2746cb6a8197527878fbc4290f4d","h":168.0,"status":"ok","price":5.27005497643859e-06,"liq":5229.8051,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x54d153ee568c75373fe40b473d52496c9a8c0db5","h":168.0,"status":"ok","price":4.354277259e-06,"liq":4348.7506,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x32e39d5ca455b11c5a0e36c46ef6a62404371c6d","h":168.0,"status":"ok","price":4.6577454224786e-06,"liq":4632.4919,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x22cc5b59b0bb6607ec67b23483b266aa9a9a0d25","h":168.0,"status":"ok","price":4.399761269e-06,"liq":4399.1871,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x010ffc9c0144ac74f4d1bbcc43b814754d3cd2d47dc23f123bfc2f022973cff2","h":168.0,"status":"ok","price":2.0440390861697e-05,"liq":32624.7968,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x36a1a0d87917549f67e2a15534ecd538733339f6","h":168.0,"status":"ok","price":4.589197667e-06,"liq":4535.3807,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xb349405f4d19ffc8857d82f7ccab01a1b6eac39d3013ce341575a7d966ff71d4","h":168.0,"status":"ok","price":2.00971965916738e-05,"liq":20561.8353,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x0678574f3c6faf81039941cb980b0fc14f9c2915","h":168.0,"status":"ok","price":4.37236735e-06,"liq":4363.8244,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x97564af02dc51a1b8d82504c1be4828b121744b5","h":168.0,"status":"ok","price":4.419173696e-06,"liq":4616.678,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x54a72d997fade7ff51ccdf0282398dac0a3e92cb","h":168.0,"status":"ok","price":3.70274450616204e-06,"liq":7.3212,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x0d88757431b1728775401ff692f0d1cbf9de749b","h":168.0,"status":"ok","price":4.23484054937647e-06,"liq":4241.2888,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x8f0cff5217f82aa9b86f08c1b7dc9f69ff8d4a0e","h":168.0,"status":"ok","price":4.361476957e-06,"liq":4351.1523,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x1ca8d3f6dab477e3b8d40be592859f107134ad8e22e6125b689866edd88e846d","h":168.0,"status":"ok","price":4.29814291509854e-06,"liq":6530.0029,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x4d3e1bb95a3c04f99acfc39a21648bc0987b1c534a4feaed316ac3f279205e62","h":168.0,"status":"ok","price":4.65504585852966e-06,"liq":6862.7125,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x04301288a903f07aeabe14606e7651fe7d5f6bf5","h":168.0,"status":"ok","price":4.47696462759426e-06,"liq":4465.6846,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x459c6a2af43ea6a3a3505ba7679876a5333b5373","h":168.0,"status":"ok","price":4.002085643e-06,"liq":3996.9845,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x3a9d368868b4460ea98419be43f9d25d2ff436e1","h":168.0,"status":"ok","price":4.02460257458703e-06,"liq":4036.4431,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x108fd379838693b5a1ae3ffbca04e3140757e3b1","h":168.0,"status":"ok","price":3.698117461e-06,"liq":3697.7652,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xa6022c4be963a9b3b62f88d532d600f11df86737","h":168.0,"status":"ok","price":4.91245873777187e-06,"liq":4896.2819,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x0f6ecd31bcf140f4bf4a350a4de3994927db6bcb7d8d411b42120131ede022b0","h":168.0,"status":"ok","price":8.55157948e-05,"liq":67622.2112,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x9db6c5118010784398d71b2461f28e74f9d8e86af404abe3f8fb14ac2d669237","h":168.0,"status":"ok","price":1.0305059100172e-05,"liq":10921.6616,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x4a113c0fc6943456f630a32a6299d0a1274c4b07","h":168.0,"status":"ok","price":2.19418973001065e-05,"liq":15457.1058,"sellers_h1":2,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x7276766b2aa41b7411e8f93c9fa3075d9b032f83","h":168.0,"status":"ok","price":4.62199103521135e-06,"liq":4615.6345,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0x843f350cc330887b3b43988093d1f458ecfd729f","h":168.0,"status":"ok","price":6.18212443530155e-06,"liq":1.0791,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xb8abcefc3894efc0b85c6f667c2386719f32810a","h":168.0,"status":"ok","price":4.52304745610621e-06,"liq":4511.7813,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xf19138d5fd7c3508b9628b989a5bf07b13379ee2","h":168.0,"status":"ok","price":4.518634704e-06,"liq":4512.7128,"sellers_h1":0,"t":1791235932}
+{"e":"cp","pool_id":"robinhood_0xb9d3f47c6f96cd8b2743b63b662d5377293e3f4c","h":168.0,"status":"ok","price":4.5253706141041e-06,"liq":4513.9506,"sellers_h1":0,"t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0xcbb3db31fe549e650dddf507f599469c2bda65d7","status":"ok","n":20,"file":"candles/robinhood_0xcbb3db31fe549e650dddf507f599469c2bda65d7.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x4332b9a88e117a99f19e73e9243e3e3269a46f79e277fcb043ebf5fab5bb9916","status":"ok","n":6,"file":"candles/robinhood_0x4332b9a88e117a99f19e73e9243e3e3269a46f79e277fcb043ebf5fab5bb9916.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x6877c1b4e7aa355c37221cf95413cd657f9ec0a4","status":"ok","n":0,"file":"candles/robinhood_0x6877c1b4e7aa355c37221cf95413cd657f9ec0a4.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x38166d1ae9bda80b8bbe750b4bfd13e758f7effc","status":"ok","n":0,"file":"candles/robinhood_0x38166d1ae9bda80b8bbe750b4bfd13e758f7effc.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x6b497769f583420b52419ecd44982a04c051546f","status":"ok","n":4,"file":"candles/robinhood_0x6b497769f583420b52419ecd44982a04c051546f.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x86632f3796c5468bdd54e549a7f7f7f36a2ae1c6f63c2943a59e11d2299aa6c8","status":"ok","n":0,"file":"candles/robinhood_0x86632f3796c5468bdd54e549a7f7f7f36a2ae1c6f63c2943a59e11d2299aa6c8.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0xcae7f80b13e2ee38043dc92e6fdb4bbada62cef8","status":"ok","n":0,"file":"candles/robinhood_0xcae7f80b13e2ee38043dc92e6fdb4bbada62cef8.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0xfef817d868bb6a341058daabcdb1c1a2ea6ea70e","status":"ok","n":0,"file":"candles/robinhood_0xfef817d868bb6a341058daabcdb1c1a2ea6ea70e.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0xc371da8bcf6aebfab9fc79cc9a2ea9c936e7c189","status":"ok","n":1,"file":"candles/robinhood_0xc371da8bcf6aebfab9fc79cc9a2ea9c936e7c189.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x21a6c224e80f65609fbcab05592a02724098050c","status":"ok","n":1,"file":"candles/robinhood_0x21a6c224e80f65609fbcab05592a02724098050c.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x84e933d53de1bfb32015669af96ad9c85c629824","status":"ok","n":1,"file":"candles/robinhood_0x84e933d53de1bfb32015669af96ad9c85c629824.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0xb90bf6e86cf095b9bd00a1a81b7b31936da6c2c0","status":"ok","n":1,"file":"candles/robinhood_0xb90bf6e86cf095b9bd00a1a81b7b31936da6c2c0.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x9beaf8db6c46ea47d93896b38eb7abb311e1b982","status":"ok","n":1,"file":"candles/robinhood_0x9beaf8db6c46ea47d93896b38eb7abb311e1b982.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x3f1eae5c32f80fc8a92f78074651a1f81306a83ec3f164e2cf6481142cca49e4","status":"ok","n":4,"file":"candles/robinhood_0x3f1eae5c32f80fc8a92f78074651a1f81306a83ec3f164e2cf6481142cca49e4.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x07188a247acf7e7626c6e6941fd70dc6c937700f","status":"ok","n":0,"file":"candles/robinhood_0x07188a247acf7e7626c6e6941fd70dc6c937700f.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x020267b3339690a47b45fd34ccdd753cb4936c7b","status":"ok","n":182,"file":"candles/robinhood_0x020267b3339690a47b45fd34ccdd753cb4936c7b.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0xadbdf5c09dcc6457f74e4fc2dd8f168e364b31e0","status":"ok","n":30,"file":"candles/robinhood_0xadbdf5c09dcc6457f74e4fc2dd8f168e364b31e0.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x8a87db646a6d0183e787b0e00d159756300e4160","status":"ok","n":1,"file":"candles/robinhood_0x8a87db646a6d0183e787b0e00d159756300e4160.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0xf094eabbbd99eb4ea17856bf6566f094d5344414","status":"ok","n":2,"file":"candles/robinhood_0xf094eabbbd99eb4ea17856bf6566f094d5344414.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x011b6ac3febb984911cfca098650a7c84993a7e9627e41de6209cb0aa303e864","status":"ok","n":0,"file":"candles/robinhood_0x011b6ac3febb984911cfca098650a7c84993a7e9627e41de6209cb0aa303e864.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x9325b3636880db979f1383b3b259f072755acb78","status":"ok","n":4,"file":"candles/robinhood_0x9325b3636880db979f1383b3b259f072755acb78.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x05974a2b88ebbadf01d17d52b2872517aadcdb153526b275edd3336f4223eed5","status":"ok","n":26,"file":"candles/robinhood_0x05974a2b88ebbadf01d17d52b2872517aadcdb153526b275edd3336f4223eed5.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x70e5ca505651089842cd0f50a0f79fd53564cac8","status":"ok","n":18,"file":"candles/robinhood_0x70e5ca505651089842cd0f50a0f79fd53564cac8.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x5ca0bb0d45507f78b64d7abaaa4a9d25e2c408af","status":"ok","n":8,"file":"candles/robinhood_0x5ca0bb0d45507f78b64d7abaaa4a9d25e2c408af.json.gz","t":1791235932}
+{"e":"ohlcv","pool_id":"robinhood_0x3cc23e25302e6fa4374190391688ce7127e3bfc2","status":"ok","n":0,"file":"candles/robinhood_0x3cc23e25302e6fa4374190391688ce7127e3bfc2.json.gz","t":1791235932}
+{"e":"run","stats":{"gt_calls":30,"gt_ok":30,"gt_429":0,"gt_404":0,"gt_err":0,"halted":0},"run_id":"2026-09-21-insentos-v3-robinhood","t":1791235932}
