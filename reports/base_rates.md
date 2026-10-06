@@ -1,6 +1,6 @@
 # ethfilter base rates: how often a new Robinhood token became sellable at a multiple
 
-Generated 2026-10-06 00:52 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
+Generated 2026-10-06 01:04 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
 Pre-registered as a descriptive Q2 output. **Descriptive only: no verdict is issued here.**
 Q1's verdict is a permutation test on 24h net return and is not this table.
 
@@ -13,16 +13,16 @@ the pool recorded no trades in 168 hours. Only `no_file` is genuinely unknown.
 
 | Arm | Mature | Traded (usable path) | Never traded (empty) | Unknown (no file) | Denominator |
 |---|---|---|---|---|---|
-| pass | 434 | 299 (68.9%) | 129 (29.7%) | 6 (1.4%) | **428** |
-| reject | 3252 | 1865 (57.3%) | 1377 (42.3%) | 10 (0.3%) | **3242** |
+| pass | 437 | 301 (68.9%) | 129 (29.5%) | 7 (1.6%) | **430** |
+| reject | 3256 | 1868 (57.4%) | 1378 (42.3%) | 10 (0.3%) | **3246** |
 
 **This is the survivorship check, and it does not come out neutral.** The empty-candle
-tokens are overwhelmingly reject-arm (129 pass vs 1377 reject). An earlier version of this
+tokens are overwhelmingly reject-arm (129 pass vs 1378 reject). An earlier version of this
 script excluded them, which inflated the reject arm far more than the pass arm: it
 overstated both arms' levels while *understating* the separation between them. Counting
 them is what the numbers below do.
 
-Not scored: 2135 tradeable tokens whose 168-hour window is still open (253 pass, 1882 reject).
+Not scored: 2133 tradeable tokens whose 168-hour window is still open (252 pass, 1881 reject).
 
 ## The table
 
@@ -37,10 +37,10 @@ and 2% entry slippage. The locked flat 4% exit slippage is replaced, because
 
 | Rung | pass printed | pass net $100 | pass net $1k | reject printed | reject net $100 | reject net $1k |
 |---|---|---|---|---|---|---|
-| 1.5x | 153 (35.7%) | 141 (32.9%) | 114 (26.6%) | 160 (4.9%) | 145 (4.5%) | 77 (2.4%) |
-| 2x | 93 (21.7%) | 84 (19.6%) | 71 (16.6%) | 115 (3.5%) | 93 (2.9%) | 37 (1.1%) |
-| 3x | 52 (12.1%) | 50 (11.7%) | 46 (10.7%) | 52 (1.6%) | 43 (1.3%) | 13 (0.4%) |
-| 5x | 26 (6.1%) | 23 (5.4%) | 20 (4.7%) | 25 (0.8%) | 18 (0.6%) | 3 (0.1%) |
+| 1.5x | 154 (35.8%) | 142 (33.0%) | 115 (26.7%) | 161 (5.0%) | 146 (4.5%) | 78 (2.4%) |
+| 2x | 94 (21.9%) | 85 (19.8%) | 72 (16.7%) | 116 (3.6%) | 94 (2.9%) | 37 (1.1%) |
+| 3x | 53 (12.3%) | 51 (11.9%) | 47 (10.9%) | 53 (1.6%) | 43 (1.3%) | 13 (0.4%) |
+| 5x | 26 (6.0%) | 23 (5.3%) | 20 (4.7%) | 25 (0.8%) | 18 (0.6%) | 3 (0.1%) |
 | 10x | 13 (3.0%) | 10 (2.3%) | 8 (1.9%) | 8 (0.2%) | 5 (0.2%) | 2 (0.1%) |
 | 25x | 1 (0.2%) | 0 (0.0%) | 0 (0.0%) | 3 (0.1%) | 2 (0.1%) | 1 (0.0%) |
 | 50x | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 2 (0.1%) | 2 (0.1%) | 0 (0.0%) |
@@ -64,7 +64,7 @@ All three push the net columns **optimistic**, so they remain upper bounds.
 
 ## Fill-rule diagnostics
 
-The pre-registered fill rule's own conditions, measured: of 66647 in-window candles, 0 had
+The pre-registered fill rule's own conditions, measured: of 67211 in-window candles, 0 had
 no volume and 55 sat below the death threshold. GeckoTerminal only returns candles that
 traded, so "the candle traded" filters nothing, and liquidity is read at 4 points, so a
 pool dying between them can still have a rung counted -- a limitation
@@ -74,8 +74,8 @@ pool dying between them can still have a rung counted -- a limitation
 
 | Reason | Count |
 |---|---|
-| `vol_h1<100` | 17238 |
-| `liq<2000` | 12512 |
+| `vol_h1<100` | 17250 |
+| `liq<2000` | 12531 |
 | `sellers<3` | 1848 |
 | `liquidity_spoofed` | 124 |
 
