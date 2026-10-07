@@ -1,6 +1,6 @@
 # ethfilter base rates: how often a new Robinhood token became sellable at a multiple
 
-Generated 2026-10-07 21:30 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
+Generated 2026-10-07 21:53 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
 Pre-registered as a descriptive Q2 output. **Descriptive only: no verdict is issued here.**
 Q1's verdict is a permutation test on 24h net return and is not this table.
 
@@ -13,16 +13,16 @@ the pool recorded no trades in 168 hours. Only `no_file` is genuinely unknown.
 
 | Arm | Mature | Traded (usable path) | Never traded (empty) | Unknown (no file) | Denominator |
 |---|---|---|---|---|---|
-| pass | 545 | 379 (69.5%) | 162 (29.7%) | 4 (0.7%) | **541** |
-| reject | 4015 | 2344 (58.4%) | 1650 (41.1%) | 21 (0.5%) | **3994** |
+| pass | 545 | 381 (69.9%) | 162 (29.7%) | 2 (0.4%) | **543** |
+| reject | 4026 | 2352 (58.4%) | 1652 (41.0%) | 22 (0.5%) | **4004** |
 
 **This is the survivorship check, and it does not come out neutral.** The empty-candle
-tokens are overwhelmingly reject-arm (162 pass vs 1650 reject). An earlier version of this
+tokens are overwhelmingly reject-arm (162 pass vs 1652 reject). An earlier version of this
 script excluded them, which inflated the reject arm far more than the pass arm: it
 overstated both arms' levels while *understating* the separation between them. Counting
 them is what the numbers below do.
 
-Not scored: 1814 tradeable tokens whose 168-hour window is still open (240 pass, 1574 reject).
+Not scored: 1806 tradeable tokens whose 168-hour window is still open (241 pass, 1565 reject).
 
 ## The table
 
@@ -37,13 +37,13 @@ and 2% entry slippage. The locked flat 4% exit slippage is replaced, because
 
 | Rung | pass printed | pass net $100 | pass net $1k | reject printed | reject net $100 | reject net $1k |
 |---|---|---|---|---|---|---|
-| 1.5x | 187 (34.6%) | 174 (32.2%) | 145 (26.8%) | 193 (4.8%) | 169 (4.2%) | 89 (2.2%) |
-| 2x | 117 (21.6%) | 104 (19.2%) | 91 (16.8%) | 129 (3.2%) | 107 (2.7%) | 39 (1.0%) |
-| 3x | 66 (12.2%) | 63 (11.6%) | 57 (10.5%) | 61 (1.5%) | 49 (1.2%) | 14 (0.4%) |
-| 5x | 31 (5.7%) | 28 (5.2%) | 24 (4.4%) | 26 (0.7%) | 19 (0.5%) | 3 (0.1%) |
-| 10x | 14 (2.6%) | 11 (2.0%) | 9 (1.7%) | 9 (0.2%) | 5 (0.1%) | 2 (0.1%) |
-| 25x | 2 (0.4%) | 1 (0.2%) | 0 (0.0%) | 3 (0.1%) | 2 (0.1%) | 1 (0.0%) |
-| 50x | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 2 (0.1%) | 2 (0.1%) | 0 (0.0%) |
+| 1.5x | 188 (34.6%) | 175 (32.2%) | 146 (26.9%) | 195 (4.9%) | 171 (4.3%) | 90 (2.2%) |
+| 2x | 118 (21.7%) | 105 (19.3%) | 91 (16.8%) | 131 (3.3%) | 109 (2.7%) | 40 (1.0%) |
+| 3x | 66 (12.2%) | 63 (11.6%) | 57 (10.5%) | 63 (1.6%) | 51 (1.3%) | 14 (0.3%) |
+| 5x | 31 (5.7%) | 28 (5.2%) | 24 (4.4%) | 28 (0.7%) | 20 (0.5%) | 3 (0.1%) |
+| 10x | 14 (2.6%) | 11 (2.0%) | 9 (1.7%) | 9 (0.2%) | 5 (0.1%) | 2 (0.0%) |
+| 25x | 2 (0.4%) | 1 (0.2%) | 0 (0.0%) | 3 (0.1%) | 2 (0.0%) | 1 (0.0%) |
+| 50x | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 2 (0.0%) | 2 (0.0%) | 0 (0.0%) |
 | 100x | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) |
 
 **n behind each cell is small above 5x.** At 10x and beyond both arms are in single digits
@@ -64,7 +64,7 @@ All three push the net columns **optimistic**, so they remain upper bounds.
 
 ## Fill-rule diagnostics
 
-The pre-registered fill rule's own conditions, measured: of 79000 in-window candles, 0 had
+The pre-registered fill rule's own conditions, measured: of 79438 in-window candles, 0 had
 no volume and 304 sat below the death threshold. GeckoTerminal only returns candles that
 traded, so "the candle traded" filters nothing, and liquidity is read at 4 points, so a
 pool dying between them can still have a rung counted -- a limitation
@@ -74,8 +74,8 @@ pool dying between them can still have a rung counted -- a limitation
 
 | Reason | Count |
 |---|---|
-| `vol_h1<100` | 19300 |
-| `liq<2000` | 14523 |
+| `vol_h1<100` | 19323 |
+| `liq<2000` | 14537 |
 | `sellers<3` | 2033 |
 | `liquidity_spoofed` | 152 |
 
