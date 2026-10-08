@@ -1,6 +1,6 @@
 # ethfilter base rates: how often a new Robinhood token became sellable at a multiple
 
-Generated 2026-10-08 14:46 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
+Generated 2026-10-08 15:12 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
 Pre-registered as a descriptive Q2 output. **Descriptive only: no verdict is issued here.**
 Q1's verdict is a permutation test on 24h net return and is not this table.
 
@@ -14,15 +14,15 @@ the pool recorded no trades in 168 hours. Only `no_file` is genuinely unknown.
 | Arm | Mature | Traded (usable path) | Never traded (empty) | Unknown (no file) | Denominator |
 |---|---|---|---|---|---|
 | pass | 569 | 404 (71.0%) | 165 (29.0%) | 0 (0.0%) | **569** |
-| reject | 4255 | 2481 (58.3%) | 1766 (41.5%) | 8 (0.2%) | **4247** |
+| reject | 4260 | 2481 (58.2%) | 1768 (41.5%) | 11 (0.3%) | **4249** |
 
 **This is the survivorship check, and it does not come out neutral.** The empty-candle
-tokens are overwhelmingly reject-arm (165 pass vs 1766 reject). An earlier version of this
+tokens are overwhelmingly reject-arm (165 pass vs 1768 reject). An earlier version of this
 script excluded them, which inflated the reject arm far more than the pass arm: it
 overstated both arms' levels while *understating* the separation between them. Counting
 them is what the numbers below do.
 
-Not scored: 1719 tradeable tokens whose 168-hour window is still open (250 pass, 1469 reject).
+Not scored: 1722 tradeable tokens whose 168-hour window is still open (254 pass, 1468 reject).
 
 ## The table
 
@@ -37,7 +37,7 @@ and 2% entry slippage. The locked flat 4% exit slippage is replaced, because
 
 | Rung | pass printed | pass net $100 | pass net $1k | reject printed | reject net $100 | reject net $1k |
 |---|---|---|---|---|---|---|
-| 1.5x | 201 (35.3%) | 188 (33.0%) | 158 (27.8%) | 215 (5.1%) | 189 (4.5%) | 98 (2.3%) |
+| 1.5x | 201 (35.3%) | 188 (33.0%) | 158 (27.8%) | 215 (5.1%) | 189 (4.4%) | 98 (2.3%) |
 | 2x | 128 (22.5%) | 115 (20.2%) | 101 (17.8%) | 142 (3.3%) | 119 (2.8%) | 43 (1.0%) |
 | 3x | 73 (12.8%) | 69 (12.1%) | 62 (10.9%) | 68 (1.6%) | 55 (1.3%) | 16 (0.4%) |
 | 5x | 36 (6.3%) | 33 (5.8%) | 27 (4.7%) | 30 (0.7%) | 21 (0.5%) | 3 (0.1%) |
@@ -74,8 +74,8 @@ pool dying between them can still have a rung counted -- a limitation
 
 | Reason | Count |
 |---|---|
-| `vol_h1<100` | 20039 |
-| `liq<2000` | 15425 |
+| `vol_h1<100` | 20053 |
+| `liq<2000` | 15443 |
 | `sellers<3` | 2086 |
 | `liquidity_spoofed` | 160 |
 
