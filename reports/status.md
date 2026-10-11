@@ -3,7 +3,7 @@
 Written by `ethfilter/base_rates.py --write` on every scheduled run that commits
 data. Counts only: no returns, no verdicts.
 
-**As of 2026-10-11 07:01 UTC**
+**As of 2026-10-11 07:20 UTC**
 
 ## ethfilter (this repo, public)
 
@@ -11,13 +11,13 @@ data. Counts only: no returns, no verdicts.
 |---|---|
 | Run id | `2026-09-21-insentos-v3-robinhood` |
 | Chain | robinhood (chain id 4663) |
-| Last run event | 2026-10-11 06:59 UTC |
-| Run events recorded | 1416 |
-| Pools evaluated | 52003 |
-| Tradeable | 7204 (pass 972, reject 6232) |
-| Untradeable | 44313 |
+| Last run event | 2026-10-11 07:19 UTC |
+| Run events recorded | 1417 |
+| Pools evaluated | 52045 |
+| Tradeable | 7209 (pass 974, reject 6235) |
+| Untradeable | 44350 |
 | Mature and scored | 5547 (pass 648, reject 4899) |
-| Checkpoints recorded | 26880 |
-| Candle files | 3283 usable, 2264 empty, 1657 missing |
+| Checkpoints recorded | 26887 |
+| Candle files | 3283 usable, 2264 empty, 1662 missing |
 
 Base-rate table: [base_rates.md](base_rates.md).
