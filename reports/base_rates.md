@@ -1,6 +1,6 @@
 # ethfilter base rates: how often a new Robinhood token became sellable at a multiple
 
-Generated 2026-10-11 05:29 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
+Generated 2026-10-11 05:47 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
 Pre-registered as a descriptive Q2 output. **Descriptive only: no verdict is issued here.**
 Q1's verdict is a permutation test on 24h net return and is not this table.
 
@@ -22,7 +22,7 @@ script excluded them, which inflated the reject arm far more than the pass arm: 
 overstated both arms' levels while *understating* the separation between them. Counting
 them is what the numbers below do.
 
-Not scored: 1641 tradeable tokens whose 168-hour window is still open (317 pass, 1324 reject).
+Not scored: 1648 tradeable tokens whose 168-hour window is still open (319 pass, 1329 reject).
 
 ## The table
 
@@ -74,8 +74,8 @@ pool dying between them can still have a rung counted -- a limitation
 
 | Reason | Count |
 |---|---|
-| `vol_h1<100` | 22656 |
-| `liq<2000` | 19066 |
-| `sellers<3` | 2265 |
+| `vol_h1<100` | 22665 |
+| `liq<2000` | 19081 |
+| `sellers<3` | 2266 |
 | `liquidity_spoofed` | 185 |
 
