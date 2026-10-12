@@ -1,6 +1,6 @@
 # ethfilter base rates: how often a new Robinhood token became sellable at a multiple
 
-Generated 2026-10-12 07:49 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
+Generated 2026-10-12 08:16 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
 Pre-registered as a descriptive Q2 output. **Descriptive only: no verdict is issued here.**
 Q1's verdict is a permutation test on 24h net return and is not this table.
 
@@ -13,16 +13,16 @@ the pool recorded no trades in 168 hours. Only `no_file` is genuinely unknown.
 
 | Arm | Mature | Traded (usable path) | Never traded (empty) | Unknown (no file) | Denominator |
 |---|---|---|---|---|---|
-| pass | 667 | 489 (73.3%) | 177 (26.5%) | 1 (0.1%) | **666** |
-| reject | 4976 | 2856 (57.4%) | 2112 (42.4%) | 8 (0.2%) | **4968** |
+| pass | 669 | 490 (73.2%) | 177 (26.5%) | 2 (0.3%) | **667** |
+| reject | 4977 | 2859 (57.4%) | 2113 (42.5%) | 5 (0.1%) | **4972** |
 
 **This is the survivorship check, and it does not come out neutral.** The empty-candle
-tokens are overwhelmingly reject-arm (177 pass vs 2112 reject). An earlier version of this
+tokens are overwhelmingly reject-arm (177 pass vs 2113 reject). An earlier version of this
 script excluded them, which inflated the reject arm far more than the pass arm: it
 overstated both arms' levels while *understating* the separation between them. Counting
 them is what the numbers below do.
 
-Not scored: 1819 tradeable tokens whose 168-hour window is still open (362 pass, 1457 reject).
+Not scored: 1827 tradeable tokens whose 168-hour window is still open (364 pass, 1463 reject).
 
 ## The table
 
@@ -37,14 +37,14 @@ and 2% entry slippage. The locked flat 4% exit slippage is replaced, because
 
 | Rung | pass printed | pass net $100 | pass net $1k | reject printed | reject net $100 | reject net $1k |
 |---|---|---|---|---|---|---|
-| 1.5x | 244 (36.6%) | 230 (34.5%) | 197 (29.6%) | 250 (5.0%) | 218 (4.4%) | 116 (2.3%) |
-| 2x | 161 (24.2%) | 147 (22.1%) | 128 (19.2%) | 165 (3.3%) | 141 (2.8%) | 55 (1.1%) |
-| 3x | 95 (14.3%) | 87 (13.1%) | 76 (11.4%) | 83 (1.7%) | 67 (1.3%) | 20 (0.4%) |
-| 5x | 48 (7.2%) | 45 (6.8%) | 38 (5.7%) | 37 (0.7%) | 26 (0.5%) | 4 (0.1%) |
-| 10x | 18 (2.7%) | 15 (2.3%) | 12 (1.8%) | 12 (0.2%) | 6 (0.1%) | 2 (0.0%) |
-| 25x | 4 (0.6%) | 3 (0.5%) | 1 (0.2%) | 4 (0.1%) | 3 (0.1%) | 1 (0.0%) |
-| 50x | 1 (0.2%) | 1 (0.2%) | 0 (0.0%) | 3 (0.1%) | 2 (0.0%) | 0 (0.0%) |
-| 100x | 1 (0.2%) | 1 (0.2%) | 0 (0.0%) | 1 (0.0%) | 0 (0.0%) | 0 (0.0%) |
+| 1.5x | 245 (36.7%) | 231 (34.6%) | 198 (29.7%) | 251 (5.0%) | 218 (4.4%) | 116 (2.3%) |
+| 2x | 161 (24.1%) | 147 (22.0%) | 128 (19.2%) | 165 (3.3%) | 141 (2.8%) | 55 (1.1%) |
+| 3x | 95 (14.2%) | 87 (13.0%) | 76 (11.4%) | 83 (1.7%) | 67 (1.3%) | 20 (0.4%) |
+| 5x | 48 (7.2%) | 45 (6.7%) | 38 (5.7%) | 37 (0.7%) | 26 (0.5%) | 4 (0.1%) |
+| 10x | 18 (2.7%) | 15 (2.2%) | 12 (1.8%) | 12 (0.2%) | 6 (0.1%) | 2 (0.0%) |
+| 25x | 4 (0.6%) | 3 (0.4%) | 1 (0.1%) | 4 (0.1%) | 3 (0.1%) | 1 (0.0%) |
+| 50x | 1 (0.1%) | 1 (0.1%) | 0 (0.0%) | 3 (0.1%) | 2 (0.0%) | 0 (0.0%) |
+| 100x | 1 (0.1%) | 1 (0.1%) | 0 (0.0%) | 1 (0.0%) | 0 (0.0%) | 0 (0.0%) |
 
 **n behind each cell is small above 5x.** At 10x and beyond both arms are in single digits
 and nothing there separates them; at 25x and 50x the counts are 0-2 and the apparent
@@ -64,7 +64,7 @@ All three push the net columns **optimistic**, so they remain upper bounds.
 
 ## Fill-rule diagnostics
 
-The pre-registered fill rule's own conditions, measured: of 97696 in-window candles, 0 had
+The pre-registered fill rule's own conditions, measured: of 97716 in-window candles, 0 had
 no volume and 308 sat below the death threshold. GeckoTerminal only returns candles that
 traded, so "the candle traded" filters nothing, and liquidity is read at 4 points, so a
 pool dying between them can still have a rung counted -- a limitation
@@ -74,8 +74,8 @@ pool dying between them can still have a rung counted -- a limitation
 
 | Reason | Count |
 |---|---|
-| `vol_h1<100` | 23693 |
-| `liq<2000` | 20479 |
-| `sellers<3` | 2348 |
+| `vol_h1<100` | 23708 |
+| `liq<2000` | 20496 |
+| `sellers<3` | 2350 |
 | `liquidity_spoofed` | 210 |
 
