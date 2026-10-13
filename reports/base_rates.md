@@ -1,6 +1,6 @@
 # ethfilter base rates: how often a new Robinhood token became sellable at a multiple
 
-Generated 2026-10-13 17:13 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
+Generated 2026-10-13 17:35 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
 Pre-registered as a descriptive Q2 output. **Descriptive only: no verdict is issued here.**
 Q1's verdict is a permutation test on 24h net return and is not this table.
 
@@ -14,15 +14,15 @@ the pool recorded no trades in 168 hours. Only `no_file` is genuinely unknown.
 | Arm | Mature | Traded (usable path) | Never traded (empty) | Unknown (no file) | Denominator |
 |---|---|---|---|---|---|
 | pass | 723 | 540 (74.7%) | 181 (25.0%) | 2 (0.3%) | **721** |
-| reject | 5301 | 3035 (57.3%) | 2254 (42.5%) | 12 (0.2%) | **5289** |
+| reject | 5308 | 3035 (57.2%) | 2258 (42.5%) | 15 (0.3%) | **5293** |
 
 **This is the survivorship check, and it does not come out neutral.** The empty-candle
-tokens are overwhelmingly reject-arm (181 pass vs 2254 reject). An earlier version of this
+tokens are overwhelmingly reject-arm (181 pass vs 2258 reject). An earlier version of this
 script excluded them, which inflated the reject arm far more than the pass arm: it
 overstated both arms' levels while *understating* the separation between them. Counting
 them is what the numbers below do.
 
-Not scored: 1759 tradeable tokens whose 168-hour window is still open (368 pass, 1391 reject).
+Not scored: 1760 tradeable tokens whose 168-hour window is still open (369 pass, 1391 reject).
 
 ## The table
 
@@ -74,8 +74,8 @@ pool dying between them can still have a rung counted -- a limitation
 
 | Reason | Count |
 |---|---|
-| `vol_h1<100` | 24650 |
-| `liq<2000` | 21983 |
-| `sellers<3` | 2462 |
+| `vol_h1<100` | 24678 |
+| `liq<2000` | 22017 |
+| `sellers<3` | 2464 |
 | `liquidity_spoofed` | 229 |
 
