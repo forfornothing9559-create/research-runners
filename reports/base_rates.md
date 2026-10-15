@@ -1,6 +1,6 @@
 # ethfilter base rates: how often a new Robinhood token became sellable at a multiple
 
-Generated 2026-10-15 20:43 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
+Generated 2026-10-15 21:14 UTC by `ethfilter/base_rates.py`. Run id `2026-09-21-insentos-v3-robinhood`, chain robinhood (4663).
 Pre-registered as a descriptive Q2 output. **Descriptive only: no verdict is issued here.**
 Q1's verdict is a permutation test on 24h net return and is not this table.
 
@@ -13,8 +13,8 @@ the pool recorded no trades in 168 hours. Only `no_file` is genuinely unknown.
 
 | Arm | Mature | Traded (usable path) | Never traded (empty) | Unknown (no file) | Denominator |
 |---|---|---|---|---|---|
-| pass | 838 | 642 (76.6%) | 193 (23.0%) | 3 (0.4%) | **835** |
-| reject | 5771 | 3333 (57.8%) | 2433 (42.2%) | 5 (0.1%) | **5766** |
+| pass | 840 | 643 (76.5%) | 193 (23.0%) | 4 (0.5%) | **836** |
+| reject | 5774 | 3336 (57.8%) | 2433 (42.1%) | 5 (0.1%) | **5769** |
 
 **This is the survivorship check, and it does not come out neutral.** The empty-candle
 tokens are overwhelmingly reject-arm (193 pass vs 2433 reject). An earlier version of this
@@ -64,7 +64,7 @@ All three push the net columns **optimistic**, so they remain upper bounds.
 
 ## Fill-rule diagnostics
 
-The pre-registered fill rule's own conditions, measured: of 121975 in-window candles, 0 had
+The pre-registered fill rule's own conditions, measured: of 122094 in-window candles, 0 had
 no volume and 308 sat below the death threshold. GeckoTerminal only returns candles that
 traded, so "the candle traded" filters nothing, and liquidity is read at 4 points, so a
 pool dying between them can still have a rung counted -- a limitation
@@ -74,8 +74,8 @@ pool dying between them can still have a rung counted -- a limitation
 
 | Reason | Count |
 |---|---|
-| `vol_h1<100` | 26022 |
-| `liq<2000` | 23721 |
-| `sellers<3` | 2534 |
+| `vol_h1<100` | 26031 |
+| `liq<2000` | 23744 |
+| `sellers<3` | 2535 |
 | `liquidity_spoofed` | 242 |
 
